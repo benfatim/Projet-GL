@@ -1,0 +1,9 @@
+/* Footer.css */
+  .footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #191970
+  ; /* Même bleu que le header */
+    color: white;
+    font-size: 0.9rem;
+  }

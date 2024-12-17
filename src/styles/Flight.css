@@ -1,0 +1,77 @@
+/* src/styles/App.css */
+
+/* Page Flight */
+.flight-page {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .flight-page h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .flight-page p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Section des cartes de vols */
+  .flight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .flight-cards .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .flight-cards .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .flight-cards .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .flight-cards .card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #007BFF;
+  }
+  
+  .flight-cards .card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 20px 20px;
+  }
+  
+  .flight-cards .card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .flight-cards .card button:hover {
+    background-color: #218838;
+  }
+  

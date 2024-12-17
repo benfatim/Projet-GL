@@ -1,0 +1,101 @@
+/* Style général */
+.avion-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 9%;
+    font-family: Arial, sans-serif;
+  }
+  
+.back-to-dashboard-btn {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-to-dashboard-btn:hover {
+  background-color: #3498db;
+}
+
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Formulaire */
+  .avion-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .avion-form input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .avion-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .avion-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Tableau */
+  .avion-table table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(8, 8, 8);
+  }
+  
+  .avion-table table th,
+  .avion-table table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .avion-table table th {
+    background-color: #7c7979;
+  }
+  
+  .avion-table .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .avion-table .delete-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .avion-table .update-btn {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .avion-table .update-btn:hover {
+    background-color: #e0a800;
+  }

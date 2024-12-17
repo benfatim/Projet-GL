@@ -1,0 +1,153 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+   
+}
+
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le contraste */
+  padding: 20px;
+  border-radius: 1000px;
+  width: 1000%;
+  max-width: 4000px;
+  
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 10000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+
+.hero .overlay {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.signup-form input {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid white; /* Bordures blanches fines */
+  background: transparent; /* Fond transparent */
+  color: white;
+}
+
+
+.signup-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder blanc légèrement atténué */
+}
+.signup-form input,
+.signup-form select {  /* Applique les mêmes styles aux input et select */
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid white; /* Bordures blanches fines */
+  background: transparent; /* Fond transparent */
+  color: white;
+}
+
+.signup-form input::placeholder,
+.signup-form select {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder et texte de select en blanc légèrement atténué */
+}
+
+
+.signup-form label {
+  display: flex; /* Aligne la case à cocher et le texte sur la même ligne */
+  align-items: flex-start; /* Aligne la case et le texte en haut de la ligne */
+  font-size: 0.8rem;
+  margin: 1px 0;
+  white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
+}
+
+.signup-form label input[type="checkbox"] {
+  margin-right: 0px; /* Ajuste l'espace entre la case à cocher et le texte */
+}
+
+.signup-form button {
+  width: 95%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.alternative-signup {
+  display: flex;
+  justify-content: space-between; /* Alignement côte à côte */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.google-btn,
+.apple-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espace entre le logo et le texte */
+  padding: 10px;
+  border: 1px solid white; /* Bordure blanche fine */
+  background: transparent; /* Fond transparent */
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 48%; /* Largeur ajustée pour tenir côte à côte */
+}
+
+.google-btn img,
+.apple-btn img {
+  width: 20px; /* Taille du logo */
+  height: 20px;
+}
+
+.google-btn:hover {
+  background-color: rgba(219, 68, 55, 0.8); /* Légère surbrillance Google */
+}
+
+.apple-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Légère surbrillance Apple */
+}
+
+p a {
+  color: #00bcd4;
+  text-decoration: none;
+}

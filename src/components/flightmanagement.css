@@ -1,0 +1,135 @@
+.flight-management-container {
+    padding: 5rem 5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.back-to-dashboard-btn {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .back-to-dashboard-btn:hover {
+    background-color: #3498db;
+  }
+.flight-management-container:hover {
+    transform: translateY(-10px);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.add-flight-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.add-flight-form input,
+.add-flight-form select,
+.add-flight-form button {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.add-flight-form input,
+.add-flight-form select {
+    flex: 1 1 320px;
+    max-width: 480px;
+    background-color: #f9f9f9;
+}
+
+.add-flight-form input:focus,
+.add-flight-form select:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-flight-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-flight-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.flight-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: rgb(33, 37, 41);
+    margin-top: 2rem;
+}
+
+.flight-table th, .flight-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.flight-table th {
+    background-color: #343a40;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.flight-table td {
+    background-color: #f8f9fa;
+}
+
+.flight-table tr:hover td {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn, .update-btn {
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.update-btn {
+    background-color: #28a745;
+}
+
+.update-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}

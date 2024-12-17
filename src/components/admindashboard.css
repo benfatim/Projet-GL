@@ -1,0 +1,207 @@
+/* Container du Dashboard */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: #ecf0f1;
+  font-family: 'Arial', sans-serif;
+  color: #777777;
+}
+/* Changer la couleur du header quand la classe 'dashboard-page' est présente */
+.app-container.dashboard-page .header {
+  background-color: white !important;  /* Fond transparent */
+  background-color: #333; /* Fond de couleur sombre */
+  color: #fff; /* Texte en blanc */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 270px;
+  background-color: #344d5e;
+  color: white;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 2px solid #16a085;
+  text-align: center; /* Centrage du texte */
+}
+
+/* Titre Sidebar */
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ecf0f1;
+  letter-spacing: 2px;
+}
+
+/* Liste des Liens dans Sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #6398ca;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+  display: block;
+  text-align: center; /* Centrage du texte */
+}
+
+/* Effet Hover pour les Liens */
+.sidebar ul li a:hover {
+  background-color: #0b7cd8;
+  transform: translateX(10px);
+}
+
+/* Bouton Log Out */
+.logout-btn {
+  margin-top: 40px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center; /* Centrage */
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Contenu Principal */
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center; /* Centrage global du texte */
+}
+
+header {
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center;
+  margin-bottom: 30px;
+  visibility: visible; /* Par défaut visible */
+}
+
+/* Masquer le header uniquement dans la page du tableau de bord */
+.dashboard-page header {
+  visibility: hidden; /* Masquer dans la page du tableau de bord */
+}
+
+/* Titre du Dashboard */
+header h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center; /* Centrage du titre */
+}
+
+/* Bouton Retour */
+.back-btn {
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center; /* Centrage */
+}
+
+.back-btn:hover {
+  background-color: #452adb;
+  transform: scale(1.05);
+}
+
+/* Section des Statistiques */
+.dashboard-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  text-align: center; /* Centrage du contenu */
+}
+
+/* Carte des Statistiques */
+.stats-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  text-align: center; /* Centrage du texte */
+}
+
+.stats-card:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stats-card h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #073674;
+}
+
+.stats-card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Masquer le header uniquement sur la page du tableau de bord */
+.dashboard-page header {
+  visibility: hidden; /* Masquer le header sur la page du tableau de bord */
+}
+
+/* Responsive Design (pour les écrans plus petits) */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    box-shadow: none;
+    border-right: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .dashboard-overview {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,80 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* Fond transparent */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo-img {
+    height: 40px;  /* Taille du logo */
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white; /* Liens blancs */
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    color: #00bcd4; /* Couleur d'effet lors du survol */
+  }
+  
+  .auth {
+    display: flex;
+    align-items: center;
+  }
+  
+  .auth input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  .auth a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth a.login {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .auth a.signup {
+    background-color: #007BFF;
+  }
+  
+  .auth a:hover {
+    background-color: #0056b3;
+  }
+  

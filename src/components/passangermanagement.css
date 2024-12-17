@@ -1,0 +1,86 @@
+.passenger-management-container {
+    padding: 7rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+.back-to-dashboard-btn {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-to-dashboard-btn:hover {
+  background-color: #3498db;
+}
+.avion-container {
+  margin-top: 200px; /* Ajustez selon la hauteur du header */
+}
+
+  
+  h2, h3 {
+    text-align: center;
+  }
+  
+  .add-passenger-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .add-passenger-form input, .add-passenger-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .add-passenger-form input {
+    flex: 1 1 300px;
+  }
+  
+  .add-passenger-form button {
+    background-color: #007bff;
+    color: rgb(12, 11, 11);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .passenger-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: rgb(5, 5, 5);
+  }
+  
+  .passenger-table th, .passenger-table td {
+    padding: 0.5rem;
+    border: 1px solid #3f3e3e;
+  }
+  
+  .passenger-table th {
+    background-color: #756e6e;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .update-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }

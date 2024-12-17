@@ -1,0 +1,159 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* Ombre sombre pour l'overlay */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Animation d'apparition de l'overlay */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-image: url('../images/2.jpeg'); /* Remplacer par ton image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 550px; /* Ajuste la largeur si nécessaire */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: white; /* Texte en blanc pour contraster avec l'image */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effet de zoom lors du survol du modal */
+.modal-content:hover {
+  transform: scale(1.05);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Signup Form Input Fields */
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Style des champs d'entrée lorsque l'utilisateur les survole */
+.signup-form input:hover,
+.signup-form select:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+/* Placeholder Styling */
+.signup-form input::placeholder,
+.signup-form select {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Signup Button */
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.signup-form button:active {
+  background-color: #00408a;
+}
+
+/* Social Buttons */
+.google-btn,
+.apple-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 48%;
+  transition: background-color 0.3s ease;
+}
+
+.google-btn img,
+.apple-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.google-btn:hover {
+  background-color: rgba(219, 68, 55, 0.8); /* Google button hover */
+}
+
+.apple-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Apple button hover */
+}
+
+/* Link Styling */
+p a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}

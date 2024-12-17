@@ -1,0 +1,128 @@
+.airport-management-container {
+    padding: 5rem 5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.back-to-dashboard-btn {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+.airport-management-container:hover {
+    transform: translateY(-10px);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.add-airport-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.add-airport-form input, .add-airport-form button {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.add-airport-form input {
+    flex: 1 1 320px;
+    max-width: 480px;
+    background-color: #f9f9f9;
+}
+
+.add-airport-form input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-airport-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-airport-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.airport-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: rgb(33, 37, 41);
+    margin-top: 2rem;
+}
+
+.airport-table th, .airport-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.airport-table th {
+    background-color: #343a40;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.airport-table td {
+    background-color: #f8f9fa;
+}
+
+.airport-table tr:hover td {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn, .update-btn {
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.update-btn {
+    background-color: #28a745;
+}
+
+.update-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
